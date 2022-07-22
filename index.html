@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix | Langing page - Mulan</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    CSS rules to specify families
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><img src="img/logo.png" alt="Logo" /></a>
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">TV Shows</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">Latest</a></li>
+        <li><a href="#">My List</a></li>
+      </ul>
+      <div class="search">
+        <input type="text" placeholder="Search" />
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </div>
+    </header>
+    <div class="banner">
+      <img src="img/bg.jpg" class="bg" />
+      <div class="content">
+        <img src="img/name.png" class="movieTitle" />
+        <h4>
+          <span>2020</span>
+          <span><i>12+</i></span>
+          <span>1 55min</span>
+          <span>Action</span>
+        </h4>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
+          provident quae ut magnam distinctio sapiente neque omnis, rem tempore,
+          cum commodi, recusandae nostrum obcaecati aspernatur? Perspiciatis
+          quam vel earum molestiae.
+        </p>
+        <div class="buttons">
+          <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Play</a>
+          <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> My list</a>
+        </div>
+      </div>
+      <a class="play" onclick="toggleVideo();"
+        ><img src="img/play.png" />Watch Trailer</a
+      >
+    </div>
+
+    <div class="trailer">
+      <video src="img/trailer.mp4" controls="true"></video>
+      <img src="img/close.png" class="close" onclick="toggleVideo();" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
